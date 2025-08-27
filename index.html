@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE CAFE</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+     <header>
+        <nav class="navbar section-content">
+
+
+                <a href="" class="nav-logo">
+                <h2 class="logo-text">☕ The Coffee Corner</h2>
+                </a>
+              <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <ul class="nav-menu">
+    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="#Menu" class="nav-link">Menu</a></li>
+    <li class="nav-item"><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+  </ul>
+            </div>
+           
+        </nav>
+          
+    </header>
+
+    <section class="hero-section">
+        <div class="section-content">
+            <div   id="Home"   class="hero-details"> 
+                <h2 class="title">Best Coffee</h2>
+                
+            <h3 class="subtitle">"Not just coffee—your new favorite place."</h3>
+            <p class="description">“Cozy neighborhood café serving handcrafted coffee, fresh bites, and good vibes daily.”
+
+</p>
+                 <div class="buttons">
+                    <a href="#" class="button-order-now">OrderNow</a>
+                    <a href="#" class="button-contact-us">ContactUs</a>
+                 </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="kofe.png" alt="Hero" class="hero-image">
+        </div>
+    </section>
+    
+      
+<!-- Menu Section-->
+<section class="menu-section">
+  <h1    id="Menu"  class="menu-title">Our Menu</h1>
+
+    <button class="arrow left" onclick="scrollMenu(-1)">&#10094;</button>
+
+    <div class="menu-container" id="menuContainer">
+      <div class="menu-card">
+        <img src="Espresso.jpg" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>₹239</p>
+      </div>
+      <div class="menu-card">
+        <img src="cappuccino.jpg" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>₹249</p>
+      </div>
+      <div class="menu-card">
+        <img src="Cold-Coffee.png" alt="Latte" />
+        <h3>Latte</h3>
+        <p>₹350</p>
+      </div>
+      <div class="menu-card">
+        <img src="green tea.jpeg" alt="Green Tea" />
+        <h3>Green Tea</h3>
+        <p>₹129</p>
+      </div>
+       <div class="menu-card">
+        <img src="refresh.png" alt="Refrehment" />
+        <h3>Refreshment</h3>
+        <p>₹250</p>
+      </div>
+      <div class="menu-card">
+        <img src="muffin.jpeg" alt="Muffin" />
+        <h3>Muffin</h3>
+        <p>₹269</p>
+      </div>
+      <div class="menu-card">
+        <img src="Croissant.jpeg" alt="Croissant" />
+        <h3>Croissant</h3>
+        <p>₹256</p>
+      </div>
+      <div class="menu-card">
+        <img src="Combo.jpeg" alt="Combo" />
+        <h3>Combo</h3>
+        <p>₹499</p>
+      </div>
+      
+    </div>
+
+    <button class="arrow right" onclick="scrollMenu(1)">&#10095;</button>
+  </section>
+
+
+       
+
+  <!--TESTMOINALS-->
+   <section class="testimonials">
+   
+  <div class="about-section">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="about.png" alt="About" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2  id="About"    class="section-title">About Us</h2>
+                <p class="text">Welcome to The Coffee Corner, your cozy retreat where every cup tells a story.
+Founded with a passion for exceptional coffee and heartfelt connections, The Coffee Corner is more than just a café — it's a space where people come to pause, refuel, and reconnect. 
+Whether you're grabbing a quick espresso on your way to work or settling in with a book and a latte, we’re here to make your coffee moments memorable.
+</p>
+    
+</div>
+        </div>
+</div>
+
+
+    <div class="testimonial">
+       <h1    id="Testimonials"   class="title">Testimonial</h1>
+      <img src="person1.jpg" alt="Customer 1">
+      <p>"Great coffee and atmosphere!"<br><strong>- Sri</strong></p>
+    </div>
+    <div class="testimonial">
+       <h1 class="title">Testimonial</h1>
+      <img src="person2.jpg" alt="Customer 2">
+      <p>"My favorite spot to relax."<br><strong>- Pavan</strong></p>
+    </div>
+    <div class="testimonial">
+       <h1 class="title">Testimonial</h1>
+      <img src="person3.jpg" alt="Customer 3">
+      <p>"Absolutely love the cappuccino!"<br><strong>- Sam</strong></p>
+    </div>
+  </section>
+  <!--contact us-->
+  <section class="contact-wrapper">
+    <div class="contact-box">
+
+      <!-- Left: Address Info -->
+      <div    id="Contact"   class="contact-left">
+        <h2>Visit Our Café</h2>
+        <p><strong>☕ The Coffee Corner</strong></p>
+        <p>45 Nallavari Street,<br>Kakinada Town</p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> hello@coffeecorner.com</p>
+        <p><strong>Opening Hours:</strong><br>
+          Mon–Fri: 7am – 8pm<br>
+          Sat–Sun: 8am – 6pm</p>
+      </div>
+      
+      <!-- Right: Contact Form -->
+      <div class="contact-right">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" required>
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="responseMsg"></p>
+        </form>
+      </div>
+        
+      </div>
+      <section class="footer-content">
+    <div class="footer-nav">
+      <p>&copy; 2025 The Coffee Corner, Inc.</p>
+     
+    </div>
+  </section>
+  </section>
+  
+   </header>
+   <script src="script.js"></script>
+
+</body>
+</html>
